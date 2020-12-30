@@ -1,4 +1,43 @@
 html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     background-color: darkslategray;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+}
+
+.memory-game {
+    height: 550px;
+    width: 750px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative; /* será explicado*/
+    height: calc(33.333% - 10px);
+    width: calc(25% - 10px);
+    margin: 5px;
+    box-shadow: 1px 1px 1px black;
+    cursor: pointer;
+    transform: scale(1);
+}
+.card:active{
+    transform: scale(0.87);
+    transform: transform * 0.3s;
+}
+
+.card-front, .card-back{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgb(39, 112, 177);
 }
