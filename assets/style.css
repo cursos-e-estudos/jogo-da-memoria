@@ -17,6 +17,7 @@ body {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    perspective: 1000px;
 }
 
 .card {
@@ -27,6 +28,8 @@ body {
     box-shadow: 1px 1px 1px black;
     cursor: pointer;
     transform: scale(1);
+    transform-style: preserve-3d; /* previne que elementos fiquem achatados no plano*/
+    transition: transform 0.8s;
 }
 
 .card:active{
@@ -41,4 +44,13 @@ body {
     padding: 10px;
     border-radius: 5px;
     background-color: rgb(27, 44, 57);
+    backface-visibility: hidden; /* elementos virados ao contrário não são visto, semelhando aos triangulo do XNA*/
+}
+
+.card-front {
+    transform: rotateX(180deg);
+}
+
+.flip {
+    transform: rotateX(180deg);
 }
