@@ -1,18 +1,18 @@
-html, body {
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: darkslategray;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 body {
     height: 100vh;
     display: flex;
+    background-color: darkslategray;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 .memory-game {
-    height: 550px;
+    height: 600px;
     width: 750px;
     margin: auto;
     display: flex;
@@ -28,8 +28,9 @@ body {
     cursor: pointer;
     transform: scale(1);
 }
+
 .card:active{
-    transform: scale(0.87);
+    transform: scale(0.89);
     transform: transform * 0.3s;
 }
 
@@ -37,7 +38,7 @@ body {
     height: 100%;
     width: 100%;
     position: absolute;
-    padding: 20px;
+    padding: 10px;
     border-radius: 5px;
-    background-color: rgb(39, 112, 177);
+    background-color: rgb(27, 44, 57);
 }
