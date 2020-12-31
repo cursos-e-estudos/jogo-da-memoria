@@ -1,7 +1,7 @@
-# Template web
-template para usar nos estudos de web front-end.
+# Portal da memória
+Jogo da memória feito no desafio de Web front-end com a Profª Gabriela Pinheiro na DIO.
 
-Para testar a versão ao vivo, [clique aqui.](https://cursos-e-estudos.github.io/template-de-web/)
+Para testar a versão ao vivo, [clique aqui.](https://cursos-e-estudos.github.io/jogo-da-memoria/)
 <br>
 
 <p align="center">
@@ -13,7 +13,7 @@ Para testar a versão ao vivo, [clique aqui.](https://cursos-e-estudos.github.io
 
 ---
 
-<br>
+<!-- <br>
 
 
 <p align="center">
@@ -24,7 +24,7 @@ Para testar a versão ao vivo, [clique aqui.](https://cursos-e-estudos.github.io
   <img width="200" src="assets/screenshots/screenshot3.png">
 </p>
 
----
+--- -->
 
 <br>
 

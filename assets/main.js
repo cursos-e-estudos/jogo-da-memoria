@@ -4,6 +4,8 @@ let fistCard, secondCard;
 
 let lockboard = false;
 
+let points = 0;
+
 function flipCard()
 {
     if(this === fistCard)
@@ -54,6 +56,12 @@ function disableCards()
 {
     fistCard.removeEventListener("click", flipCard);
     secondCard.removeEventListener("click", flipCard);
+    points += 1;
+    if (points >= 6) {
+        setTimeout(() => {
+            newGame();
+        }, 4000);
+    }
 
     resetBoard();
 }
@@ -72,4 +80,19 @@ function unflipCards()
 function resetBoard()
 {
     [hasFippedCard, lockboard, fistCard, secondCard] = [false, false, null, null];
+}
+
+//Immediately invoked function
+(function shuffle()
+{
+    cards.forEach((card) => {
+        let randomPos = Math.floor(Math.random() * 12);
+        card.style.order = randomPos;
+    });
+})();
+
+function newGame()
+{
+    window.location = window.location.href+'?eraseCache=true';
+    window.location.reload();
 }
